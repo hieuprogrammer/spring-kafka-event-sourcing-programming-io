@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>ai.tech</groupId>
-        <artifactId>producer-service</artifactId>
+        <artifactId>wikimedia-recent-changes-event-sourcing</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
@@ -49,5 +49,4 @@
             <version>3.0.3</version>
         </dependency>
     </dependencies>
-
 </project>

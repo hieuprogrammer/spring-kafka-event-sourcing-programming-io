@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: wikimedia-recent-changes-producer
   kafka:
     producer:
       bootstrap-servers: localhost:9092

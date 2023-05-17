@@ -2,6 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <developers>
+        <developer>
+            <name>Hieu Le</name>
+            <email>hieuprogrammer@outlook.com</email>
+            <roles>
+                <role>Programmer/Engineer</role>
+            </roles>
+        </developer>
+    </developers>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -10,10 +20,10 @@
     </parent>
 
     <groupId>ai.tech</groupId>
-    <artifactId>producer-service</artifactId>
+    <artifactId>wikimedia-recent-changes-event-sourcing</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>producer-service</name>
-    <description>producer-service</description>
+    <name>wikimedia-recent-changes-event-sourcing</name>
+    <description>wikimedia-recent-changes-event-sourcing</description>
     <packaging>pom</packaging>
 
     <modules>
@@ -34,7 +44,6 @@
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
         </dependency>
-        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>

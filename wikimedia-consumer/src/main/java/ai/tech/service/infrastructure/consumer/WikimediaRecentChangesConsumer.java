@@ -18,6 +18,6 @@ public class WikimediaRecentChangesConsumer {
     public void consume(final String message) {
         log.info("Received event data: {}, from topic: {}", message, KafkaConstants.TOPIC_NAME);
         wikimediaRecentChangeRepository.save(WikimediaRecentChange.builder()
-                .wikimediaRecentChangeData(message).build());
+                .data(message).build());
     }
 }

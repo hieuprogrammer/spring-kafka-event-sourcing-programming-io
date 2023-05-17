@@ -3,6 +3,8 @@ package ai.tech.domain;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.UUID;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -11,6 +13,6 @@ import lombok.*;
 @Builder
 @Entity
 public class WikimediaRecentChange {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private Long id;
-    @Lob private String wikimediaRecentChangeData;
+    @Id @GeneratedValue(strategy = GenerationType.UUID) private UUID id;
+    @Lob private String data;
 }
